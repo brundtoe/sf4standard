@@ -3,10 +3,10 @@
 En række standardkonfigurationer af webserver Apache og Nginx der anvender php-fpm
 
 ## Projekt Symfony4 (bookstore) 
-Eksemplet, der anvender Dockuer Hub imaget php:7.2-apache, hvor Apache og PHP befinder sig i samme image og Symfony/apache-pack opretter .htaccess fil i public mappen.
+Eksemplet, der anvender Docker Hub imaget php:7.2-apache, hvor Apache og PHP befinder sig i samme image og Symfony/apache-pack opretter .htaccess fil i public mappen.
 
 ## Mappen apache/http
-Et eksempel med mine images httpd:bbr og php_fpm:bbr
+Et eksempel med mine images httpd:bbr og php_fpm:bbr fra projektet https://github.com/brundtoe/docker_standard
 
 ## Initiering af Symfony
 * Kør projektet i apache/http med `docker-compose up`
