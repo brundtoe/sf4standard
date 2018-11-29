@@ -1,0 +1,58 @@
+version: '3.3'
+# NB det er kun src/index.html filen, der kan vises da php-fpm ikke er implementeret
+services:
+  apache:
+    image: httpd:bbr
+    container_name: sf4apache
+    ports:
+      - "80:80"
+    volumes:
+      - ../../web/:/var/www/html/
+      - ./default.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf
+
+    networks:
+      - default
+
+  php:
+    image: php_fpm:bbr
+    container_name: sf4php
+    volumes:
+      - ../../web/:/var/www/html/
+    networks:
+      - default
+
+  mysql:
+    image: mysql:8
+    command: "--default-authentication-plugin=mysql_native_password"
+    container_name: sf4mysql
+    volumes:
+      - mysqldata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: bookstore
+      MYSQL_USER: athlon38
+      MYSQL_PASSWORD: trine-73-glf
+    networks:
+      - default
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: sf4phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - 8080:80
+    links:
+      - mysql
+    networks:
+      - default
+
+volumes:
+  mysqldata:
+    external: true
+
+networks:
+  default:
+    external:
+      name: humle_net
