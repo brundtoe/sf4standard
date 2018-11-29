@@ -30,4 +30,12 @@ Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
 
 Nginx og php-fpm anvender unix:/run/php/php7.2-fpm.sock
 
+## Mappen nginx-http
+Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
 
+Nginx og php-fpm listen = php:9000
+
+**Det er vigtigt at der referers til docker-compose service php i**
+
+- default.conf
+- zz-docker.conf
