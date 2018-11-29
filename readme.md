@@ -18,4 +18,16 @@ composer create-project symfony/website-skeleton .
 ```
 **Husk det afsluttende punktum ovenfor**
 
+Apache og php-fpm lytter på port 9000
+
+## mappen apache/socket
+Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
+
+Det fungerer med unix:/run/php/php7.2-fpm.sock
+
+## Mappen nginx
+Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
+
+Nginx og php-fpm anvender unix:/run/php/php7.2-fpm.sock
+
 
