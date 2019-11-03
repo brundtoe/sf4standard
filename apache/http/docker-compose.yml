@@ -22,7 +22,7 @@ services:
       - default
 
   mysql:
-    image: mysql:8
+    image: mysql:bbr
     command: "--default-authentication-plugin=mysql_native_password"
     container_name: sf4mysql
     volumes:

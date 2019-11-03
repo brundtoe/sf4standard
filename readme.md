@@ -3,7 +3,7 @@
 En række standardkonfigurationer af webserver Apache og Nginx der anvender php-fpm
 
 ## Projekt Symfony4 (bookstore) 
-Eksemplet, der anvender Docker Hub imaget php:7.2-apache, hvor Apache og PHP befinder sig i samme image og Symfony/apache-pack opretter .htaccess fil i public mappen.
+Eksemplet, der anvender Docker Hub imaget php:7.3-apache-buster, hvor Apache og PHP befinder sig i samme image og Symfony/apache-pack opretter .htaccess fil i public mappen.
 
 ## Mappen apache/http
 Et eksempel med mine images httpd:bbr og php_fpm:bbr fra projektet https://github.com/brundtoe/docker_standard
@@ -23,12 +23,12 @@ Apache og php-fpm lytter på port 9000
 ## mappen apache/socket
 Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
 
-Det fungerer med unix:/run/php/php7.2-fpm.sock
+Det fungerer med unix:/run/php/php7.3-fpm.sock
 
 ## Mappen nginx
 Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
 
-Nginx og php-fpm anvender unix:/run/php/php7.2-fpm.sock
+Nginx og php-fpm anvender unix:/run/php/php7.3-fpm.sock
 
 ## Mappen nginx-http
 Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
