@@ -2,35 +2,45 @@
 
 En række standardkonfigurationer af webserver Apache og Nginx der anvender php-fpm
 
-## Projekt Symfony4 (bookstore) 
-Eksemplet, der anvender Docker Hub imaget php:7.3-apache-buster, hvor Apache og PHP befinder sig i samme image og Symfony/apache-pack opretter .htaccess fil i public mappen.
+Demo appen blev i marts 2020 genskabt. Det er en ny app som anvender en sqlite database.
+
+Det aktuelle projekt i mappen web er en demo udgave
+
+    composer create-project symfony/symfony-demo:1.4.4. web
+    
+enable Apache http servrens adgang til at skrive i Symfony loggen::
+
+```
+export HTTPDUSER=www-data
+sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var
+sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var
+```
+
+På Manjaro skal det være 
+```
+export HTTPDUSER=http
+```
 
 ## Mappen apache/http
-Et eksempel med mine images httpd:bbr og php_fpm:bbr fra projektet https://github.com/brundtoe/docker_standard
 
-## Initiering af Symfony
-* Kør projektet i apache/http med `docker-compose up`
-* gå til sf4php containeren `docker exec -it -u dev sf4php bash`
-* opret symfony projektet
-```
-cd /var/www/html
-composer create-project symfony/website-skeleton .
-```
-**Husk det afsluttende punktum ovenfor**
+Et eksempel med mine images httpd:bbr og php_fpm:bbr fra projektet https://github.com/brundtoe/docker_standard
 
 Apache og php-fpm lytter på port 9000
 
 ## mappen apache/socket
+
 Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
 
-Det fungerer med unix:/run/php/php7.3-fpm.sock
+Det fungerer med unix:/run/php/php7.4-fpm.sock
 
 ## Mappen nginx
+
 Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
 
-Nginx og php-fpm anvender unix:/run/php/php7.3-fpm.sock
+Nginx og php-fpm anvender unix:/run/php/php7.4-fpm.sock
 
 ## Mappen nginx-http
+
 Et eksempel med anvendelse af httpd:bbr og php_fpm:bbr
 
 Nginx og php-fpm listen = php:9000
