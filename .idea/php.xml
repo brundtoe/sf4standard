@@ -114,6 +114,13 @@
       <path value="$PROJECT_DIR$/web/vendor/psr/log" />
       <path value="$PROJECT_DIR$/web/vendor/composer" />
       <path value="$PROJECT_DIR$/web/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/web/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/web/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/web/vendor/twig/intl-extra" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -129,7 +136,7 @@
       </interpreter>
     </interpreters>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
   <component name="PhpUnit">
     <phpunit_settings>
       <phpunit_by_interpreter interpreter_id="63abe7c9-b120-4da7-b265-b4f2f0af1c1e" custom_loader_path="vendor/autoload.php" phpunit_phar_path="" />

@@ -38,10 +38,12 @@
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/php-cs-fixer/diff" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/web/vendor/psr/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/sensio/framework-extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/sensiolabs/security-checker" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/apache-pack" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/asset" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/browser-kit" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/cache" />
@@ -68,6 +70,7 @@
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/http-kernel" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/intl" />
+      <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/mailer" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/maker-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/mime" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/monolog-bridge" />
@@ -76,9 +79,11 @@
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/phpunit-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-intl-grapheme" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-intl-icu" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-intl-idn" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-intl-messageformatter" />
+      <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-intl-normalizer" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-php70" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/polyfill-php72" />
@@ -93,6 +98,7 @@
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/security-http" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/stopwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/string" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/swiftmailer-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/symfony/translation-contracts" />
@@ -108,6 +114,7 @@
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/tgalopin/html-sanitizer" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/tgalopin/html-sanitizer-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/twig/extensions" />
+      <excludeFolder url="file://$MODULE_DIR$/web/vendor/twig/intl-extra" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/zendframework/zend-code" />
       <excludeFolder url="file://$MODULE_DIR$/web/vendor/zendframework/zend-eventmanager" />
