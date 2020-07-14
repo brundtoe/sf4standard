@@ -8,7 +8,7 @@ Det aktuelle projekt i mappen web er en demo udgave
 
     composer create-project symfony/symfony-demo:1.4.4. web
     
-enable Apache http servrens adgang til at skrive i Symfony loggen::
+enable Apache http serverens adgang til at skrive i Symfony loggen::
 
 ```
 export HTTPDUSER=www-data
